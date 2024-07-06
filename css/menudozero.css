@@ -1,0 +1,57 @@
+
+*{
+    padding: 0;
+    margin:0 auto;
+}
+
+#menu{
+    list-style: none;
+    background: #f0daff;
+    float: left;
+    font-family: monospace;
+    width:100%;
+    font-weight: bold;
+}
+
+.list {
+    float: left;
+    font-weight: bold;
+    list-style: none;
+    text-align: justify;
+}
+
+.list a{
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #440075;
+    font-size: 30px;
+    padding: 20px 40px 20px 40px;
+    border-radius: 7px;
+    margin-right: 100px;
+}
+
+.list a:hover {
+    background-color:#ffffbd;
+    color: #440075;
+}
+
+#logo{
+    list-style: none;
+    text-align: justify;
+    position: absolute;
+    margin-left: 40px ;
+    margin-top: 10px;
+}
+
+#login {
+    margin-top: 28px;
+}
+
+#carrinho {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -58px;
+
+}

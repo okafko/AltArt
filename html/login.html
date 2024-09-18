@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width = device - width , initial - scale =1" >
-   <title>AltArt - Carrinho de Compras</title>
-   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-   <link rel="stylesheet" type="text/css" href="css/menudozero.css">
-   <link rel="stylesheet" type="text/css" href="css/corpo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="log.css">
 </head>
-
 <body>
-   <!--Menu-->
-   <header>
-      <a href="index.html" > <img id= "logo" width=80 src="img/logo.png" alt="..."> </a>
-      <nav>
-         <ul id="menu">
-            <li class="list"><a style="margin-left: 200px;" href="index.html">Home</a></li>
-            <li class="list"><a href="produtos.html">Produtos</a></li>
-            <li class="list"><a href="sobre.html">Quem Somos</a></li>
-            <li id="login"><a href="login.html" > <img id= "login" width=50 src="img/loginusuario.png"> </a></li>
-            <li id="carrinho"><a href="carrinho.html" > <img id= "carrinho" width=50 src="img/carrinhodecompras.png"> </a></li>
-            <li id="divBusca">
-               <input type="text" id="txtBusca" placeholder="Produto..."/>
-               <img src="img/lupa.png" width="30px" id="btnBusca" alt="Buscar"/>
-            </li>
-         </ul>
-      </nav>
-   </header>
+    <div class="page">
+        <form method="POST" class="formLogin">
+            <h1>Login</h1>
+            <p>Digite os seus dados de acesso no campo abaixo.</p>
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite seu e-mail" />
+            <a href="/">Esqueci minha senha</a>
+            <input type="submit" value="Acessar" class="btn" />
+        </form>
+    </div>
+    
 </body>
 </html>

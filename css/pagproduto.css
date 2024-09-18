@@ -14,19 +14,6 @@ body {
     min-height: 100vh;
 }
 
-header {
-    background-color: #bfd595;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 36px;
-    color: #42571e;
-    margin-bottom: 10px;
-}
-
 .highlight {
     color: #6c8146 ;
 }
@@ -61,7 +48,7 @@ main {
 
 .products h2 {
     font-size: 28px;
-    color: #95ab6d;
+    color: #8ec1df;
     margin-bottom: 40px;
 }
 
@@ -115,11 +102,3 @@ main {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-    background-color: #d1cf87;
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    color: #d1cf87;
-    margin-top: auto;
-}

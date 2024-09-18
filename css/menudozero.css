@@ -30,7 +30,7 @@
     font-size: 30px;
     padding: 20px 40px 20px 40px;
     border-radius: 7px;
-    margin-right: 100px;
+    margin-right: 120px;
 }
 
 .list a:hover {
@@ -47,13 +47,14 @@
 }
 
 #login {
+    margin-right: 130px;
     margin-top: -2px;
 }
 
 #carrinho {
     position: absolute;
-    margin-left: 600px;
-    margin-top: -55px;
+    margin-left: 620px;
+    margin-top: -53px;
 }
 
 #divBusca{
@@ -73,7 +74,7 @@
     border:none;
     height:32px;
     width:260px;
-    margin-left: 225px;
+    margin-left: 10px;
     margin-top: 0px;
   }
 

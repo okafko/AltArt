@@ -1,7 +1,5 @@
 /* Estilos gerais */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -11,19 +9,8 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #ffe5d4d5;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    color: #ee6b6b;
-    font-size: 36px;
-}
-
 nav a {
-    color: #ee6b6b;
+    color: #8ec1df;
     margin: 0 15px;
     text-decoration: none;
     font-size: 18px;
@@ -35,9 +22,10 @@ main {
 }
 
 h2 {
-    color: #ee6b6b;
+    color: #8ec1df;
     font-size: 28px;
     margin-bottom: 20px;
+    margin-top: 120px;
 }
 
 .cart {
@@ -72,7 +60,7 @@ h2 {
 }
 
 .item-details h3 {
-    color: #ee6b6b;
+    color: #8ec1df;
 }
 
 .item-details p {
@@ -80,7 +68,7 @@ h2 {
 }
 
 .remove-item {
-    color: #ee6b6b;
+    color: #8ec1df;
     cursor: pointer;
 }
 
@@ -94,11 +82,11 @@ h2 {
 }
 
 .cart-total h3 {
-    color: #ee6b6b;
+    color: #8ec1df;
 }
 
 button {
-    background-color: #ee6b6b;
+    background-color: #8ec1df;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -107,7 +95,7 @@ button {
 }
 
 button:hover {
-    background-color: #ee6b6b;
+    background-color: #8ec1df;
 }
 
 footer {
@@ -118,5 +106,5 @@ footer {
 }
 
 footer p {
-    color: #ee6b6b;
+    color: #8ec1df;
 }

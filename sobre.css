@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin:0 ;
+}
+
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vhh;
+}
+
+div {
+    display: block
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-x1
+{
+    width: 100%;
+    padding-right: var;
+    padding-left: var;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#area-principal{
+  width: 920px;
+  margin: 0 auto; /* auto paramargm autoática */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#area-postagens{
+  width: 0 auto;
+  float: center;
+  position: center;
+}
+  
+.postagem{
+  padding: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 228, 0.719);
+}

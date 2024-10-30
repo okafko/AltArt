@@ -6,7 +6,37 @@
    <title>AltArt - Carrinho de Compras</title>
    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
    <link rel="stylesheet" type="text/css" href="css/menudozero.css">
-   <link rel="stylesheet" type="text/css" href="css/corpo.css">
+   <style>
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 100%;
+            display: block;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -27,5 +57,44 @@
          </ul>
       </nav>
    </header>
+   
+   <div class="carrossel">
+      <div class="slides">
+          <div class="slide active">
+              <img src="img/primeiraimg.png" alt="Descrição da Imagem 1">
+          </div>
+          <div class="slide">
+              <img src="img/segundaimg.png" alt="Descrição da Imagem 2">
+          </div>
+          <div class="slide">
+              <img src="img/terceiraimg.png" alt="Descrição da Imagem 3">
+          </div>
+      </div>
+      <button class="prev" onclick="mudarslide(-1)">&#10094;</button>
+      <button class="next" onclick="mudarslide(1)">&#10095;</button>
+  </div>
+
+  
+<script>
+   let slideIndex = 0;
+   mostrarSlides(slideIndex);
+
+   function mudarslide(n) {
+       mostrarSlides(slideIndex += n);
+   }
+
+   function mostrarSlides(n) {
+       const slides = document.querySelectorAll('.slide');
+       if (n >= slides.length) { slideIndex = 0; }
+       if (n < 0) { slideIndex = slides.length - 1; }
+       
+       slides.forEach((slide, index) => {
+           slide.style.display = index === slideIndex ? 'block' : 'none';
+       });
+   }
+  
+</script>
+
+
 </body>
 </html>

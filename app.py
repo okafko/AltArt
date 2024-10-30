@@ -9,7 +9,7 @@ def produto():
         'nome': 'Produto Exemplo',
         'descricao': 'Este é um produto de exemplo para demonstrar a estrutura de uma página de produto.',
         'preco': 'R$ 199,99',
-        'imagem': 'static/imagem_produto.jpg'  # Coloque uma imagem na pasta static
+        'imagem': 'static/imagem_produto.jpg'  
     }
     return render_template('produto.html', produto=produto_info)
 

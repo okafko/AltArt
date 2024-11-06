@@ -1,67 +1,98 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047
+}
+
+.page {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    background-color: #f5f5f5;
-}
-
-.container {
-    max-width: 800px;
+    align-content: center;
+    justify-content: center;
     width: 100%;
-    padding: 20px;
+    height: 100vh;
+    background:#c8d9e6
 }
 
-.produto {
+.formLogin {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
 }
 
-.produto-imagem {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+.areaLogin img {
+    width: 420px;
 }
 
-.produto-nome {
-    font-size: 24px;
-    margin-top: 15px;
-    color: #5e5d5d;
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
 }
 
-.produto-descricao {
-    font-size: 16px;
-    margin: 10px 0;
-    color: #7e7a7a;
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
 }
 
-.produto-preco {
-    font-size: 20px;
-    font-weight: bold;
-    color: #023047 ;
-    margin: 10px 0;
+.formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
 }
 
-.btn-comprar {
-    padding: 10px 20px;
-    background-color: #023047 ;
-    color: white;
-    border: none;
-    border-radius: 5px;
+
+.formLogin input:focus {
+    border: 1px solid #2F4156 ;
+}
+
+.formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formLogin a:hover {
+    color: #7E96A0 ;
+}
+
+.btn {
+    background-color: #7E96A0 ;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
     cursor: pointer;
-    font-size: 16px;
+    margin: 0 !important;
+
 }
 
-.btn-comprar:hover {
-    background-color: #fcf3f0;
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #567C8D;
+
 }

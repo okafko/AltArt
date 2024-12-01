@@ -51,7 +51,7 @@
             <li id="login"><a href="login.html" > <img id= "login" width=60 src="img/loginusuario.png"> </a></li>
             <li id="carrinho"><a href="pagcarrinho.html" > <img id= "carrinho" width=55 src="img/carrinhodecompras.png"> </a></li>
              <li id="divBusca">
-                 <input type="text" id="txtBusca" placeholder="Produto..."/>
+                
                  <img src="img/lupa.png" width="30px" id="btnBusca" alt="Buscar"/>
              </li>
          </ul>
@@ -59,42 +59,75 @@
    </header>
    
    <div class="carrossel">
-      <div class="slides">
-          <div class="slide active">
-              <img src="img/primeiraimg.png" alt="Descrição da Imagem 1">
-          </div>
-          <div class="slide">
-              <img src="img/segundaimg.png" alt="Descrição da Imagem 2">
-          </div>
-          <div class="slide">
-              <img src="img/terceiraimg.png" alt="Descrição da Imagem 3">
-          </div>
-      </div>
-      <button class="prev" onclick="mudarslide(-1)">&#10094;</button>
-      <button class="next" onclick="mudarslide(1)">&#10095;</button>
-  </div>
+    <div class="slides">
+        <div class="slide active">
+            <img src="img/primeiraimg.png" alt="Descrição da Imagem 1">
+        </div>
+        <div class="slide">
+            <img src="img/segundaimg.png" alt="Descrição da Imagem 2">
+        </div>
+        <div class="slide">
+            <img src="img/terceiraimg.png" alt="Descrição da Imagem 3">
+        </div>
+    </div>
+    <button class="prev" onclick="mudarslide(-1)">&#10094;</button>
+    <button class="next" onclick="mudarslide(1)">&#10095;</button>
+</div>
 
-  
+
 <script>
-   let slideIndex = 0;
-   mostrarSlides(slideIndex);
+ let slideIndex = 0;
+ mostrarSlides(slideIndex);
 
-   function mudarslide(n) {
-       mostrarSlides(slideIndex += n);
-   }
+ function mudarslide(n) {
+     mostrarSlides(slideIndex += n);
+ }
 
-   function mostrarSlides(n) {
-       const slides = document.querySelectorAll('.slide');
-       if (n >= slides.length) { slideIndex = 0; }
-       if (n < 0) { slideIndex = slides.length - 1; }
-       
-       slides.forEach((slide, index) => {
-           slide.style.display = index === slideIndex ? 'block' : 'none';
-       });
-   }
-  
+ function mostrarSlides(n) {
+     const slides = document.querySelectorAll('.slide');
+     if (n >= slides.length) { slideIndex = 0; }
+     if (n < 0) { slideIndex = slides.length - 1; }
+     
+     slides.forEach((slide, index) => {
+         slide.style.display = index === slideIndex ? 'block' : 'none';
+     });
+ }
+
 </script>
+<div style="margin-top: -900px; text-align: center;">
+    <input type="text" id="search" placeholder="Pesquisar" style="padding: 8px; width:200px; font-size: 16px;">
+    <button onclick="buscar()">Buscar</button>  
+    <input type="image" src=img/lupa.png" alt="Submit" width="110" height="40">
+</div>
+</div>
+
+<script>
+function buscar() {
+    const query = document.getElementById('search').value.toLowerCase();
+
+    if (query) {
+        if (query === "produtos") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/pagproduto.html";
+
+        } else if (query === "sobre nós") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/sobre.html";
 
 
-</body>
-</html>
+        } else if (query === "login") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/login.html";
+
+        } else if (query === "cadastro") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/cadastro.html";
+
+        } else if (query === "carrinho") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/pagcarrinho.html";
+
+
+        } else {
+            alert("Produto não encontrado!");
+        }
+    } else {
+        alert("Por favor, digite algo para buscar.");
+    }
+}
+</script>

@@ -28,6 +28,10 @@ main {
 }
 
 .product-card {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
     background-color: #fff;
     border-radius: 15px;
     padding: 20px;

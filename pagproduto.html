@@ -57,5 +57,36 @@
             produto1.src = originalImage;
         });
     </script>
+    <script>
+function buscar() {
+    const query = document.getElementById('search').value.toLowerCase();
+
+    if (query) {
+        if (query === "produtos") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/pagproduto.html";
+
+        } else if (query === "sobre nós") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/sobre.html";
+
+
+        } else if (query === "login") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/login.html";
+
+        } else if (query === "cadastro") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/cadastro.html";
+
+        } else if (query === "carrinho") {
+            window.location.href = "file:///C:/Users/ygfdt/Desktop/app/exer/AltArt-main/pagcarrinho.html";
+
+
+        } else {
+            alert("Produto não encontrado!");
+        }
+    } else {
+        alert("Por favor, digite algo para buscar.");
+    }
+}
+</script>
+
 </body>
 </html>

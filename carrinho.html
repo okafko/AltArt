@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width = device - width , initial - scale =1" >
+   <title>Pomercado - Carrinho</title>
+   <link rel="stylesheet" type="text/css" href="home.css">
+   <link rel="stylesheet" type="text/css" href="carrinho.css">
+</head>
+<body>
+   <header>
+      <a href="index.html" > <img id= "logo" width=100 src="logolinda.png" alt="..."> </a>
+      <nav>
+         <ul id="menu">
+            <li class="list"><a style="margin-left: 200px;" href="index.html">Home</a></li>
+            <li class="list"><a href="estoque.html">Estoque</a></li>
+            <li class="list"><a href="funcionario.html">Funcionários</a></li>
+            <li class="list"><a href="login.html" >Login</a></li>
+            <li class="list"><a href="cadastro.html" >Cadastro</a></li>
+            <li class="list"><a href="carrinho.html" >Carrinho</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+        <h2>Seu Carrinho de Compras</h2>
+        <div class="cart">
+            <div class="cart-item">
+                <img src="produto1.jpg" alt="Produto 1">
+                <div class="item-details">
+                    <h3>Produto 1</h3>
+                    <p>Preço: R$ 100,00</p>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="remove-item">Remover</div>
+            </div>
+            
+            <div class="cart-item">
+                <img src="produto2.jpg" alt="Produto 2">
+                <div class="item-details">
+                    <h3>Produto 2</h3>
+                    <p>Preço: R$ 50,00</p>
+                    <label>Quantidade:</label>
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="remove-item">Remover</div>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: R$ 150,00</h3>
+                <button>Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+</script>
+</body>

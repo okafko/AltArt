@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/log.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width = device - width , initial - scale =1" >
+   <title>Pomercado - Cadastro</title>
+   <link rel="stylesheet" type="text/css" href="home.css">
+   <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
-    <div class="page">
+   <header>
+      <a href="index.html" > <img id= "logo" width=100 src="logolinda.png" alt="..."> </a>
+      <nav>
+         <ul id="menu">
+            <li class="list"><a style="margin-left: 200px;" href="index.html">Home</a></li>
+            <li class="list"><a href="estoque.html">Estoque</a></li>
+            <li class="list"><a href="funcionario.html">Funcionários</a></li>
+            <li class="list"><a href="login.html" >Login</a></li>
+            <li class="list"><a href="cadastro.html" >Cadastro</a></li>
+            <li class="list"><a href="carrinho.html" >Carrinho</a></li>
+         </ul>
+      </nav>
+   </header>
+<div class="page">
         <form method="POST" class="formLogin">
             <h1>Cadastro</h1>
             <p>Digite os seus dados para cadastro no campo abaixo.</p>
@@ -28,7 +41,4 @@
             <input type="submit" value="Acessar" class="btn" />
         </form>
     </div>
-    
 </body>
-</html>
-<!--nome, email, telefone, endereço, senha, confirmar senha-->

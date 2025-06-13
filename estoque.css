@@ -1,0 +1,76 @@
+/* Estilos Gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fffbef;
+}
+
+main {
+    flex: 1;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    color: #8ec1df;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.product-card {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    color: #8ec1df;
+    font-size: 22px;
+}
+
+.product-card p {
+    color: #888;
+    font-size: 18px;
+}
+
+.product-card button {
+    background-color: #8ec1df;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.product-card button:hover {
+    background-color: #8ec1df;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}

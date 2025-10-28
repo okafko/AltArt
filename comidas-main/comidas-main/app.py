@@ -107,11 +107,9 @@ def comidas():
 def favoritos():
     return render_template('favoritos.html')
 
-@app.route('/logo')
-def logo():
-    return render_template('logo.png')
 
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
